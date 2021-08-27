@@ -5,3 +5,8 @@
 .article {
   background-color: $light-gray;
 }
+
+.article__property-list {
+  @include list-reset;
+  display: flex;
+}
