@@ -9,5 +9,11 @@
 @import "global";
 
 /* Блоки */
-@import "blocks/header";
+
 @import "blocks/container";
+@import "blocks/title";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/article";
+@import "blocks/wrapper";
+@import "blocks/footer";

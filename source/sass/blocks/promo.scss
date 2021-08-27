@@ -1,0 +1,10 @@
+.promo {
+  background-image: url('../img/header@2x.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media(max-width: 1440px) {
+    background-size: 1440px auto;
+  }
+}
