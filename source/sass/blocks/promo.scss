@@ -1,14 +1,31 @@
 .promo {
   background-image: url('../img/header@2x.jpg');
-  background-position: center bottom;
+  background-position: center 85%;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: $white;
+  padding-top: 38px;
 
   @media(max-width: 1440px) {
     background-size: 1440px auto;
+    background-position: center bottom;
   }
 }
 
 .promo__container {
-  min-height: 900px;
+  min-height: 796px;
+  max-width: 485px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__title {
+  margin-bottom: 14px;
+}
+
+.promo__subtitle {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
