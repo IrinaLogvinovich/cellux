@@ -1,0 +1,24 @@
+.footer {
+  background-color: $black;
+  color: $light-gray;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  padding-top: 86px;
+  padding-bottom: 70px;
+
+  @media(max-width: 1440px) {
+    max-width: 1280px;
+  }
+}
+
+.footer__social .social__caption {
+  max-width: 460px;
+}
+
+.footer__copyright {
+  margin: 0;
+}
