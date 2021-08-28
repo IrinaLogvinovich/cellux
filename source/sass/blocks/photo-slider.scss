@@ -1,0 +1,51 @@
+.photo-slider__container {
+  display: grid;
+}
+
+.photo-slider__bg {
+  display: flex;
+  justify-content: space-between;
+  min-height: 700px;
+  grid-area: main;
+}
+
+.photo-slider__bg-item {
+  width: calc(50% - 10px);
+  height: 100%;
+  background-color: #F6F6F6;
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-size: 84%;
+  background-position: center;
+}
+
+.photo-slider__slider {
+  min-height: 700px;
+  padding: 55px 0;
+  grid-area: main;
+}
+
+.photo-slider__list {
+  @include list-reset;
+  display: flex;
+}
+
+.photo-slider__slide {
+  position: relative;
+  width: 295px;
+  height: 536px;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //width: auto;
+    //object-fit: cover;
+    //object-position: 50% 50%;
+  }
+}
+
+.photo-slider__slide:nth-of-type(2n) {
+  margin-top: 79px;
+}

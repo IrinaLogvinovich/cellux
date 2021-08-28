@@ -1,5 +1,6 @@
 /* Плагины */
 @import "plugins/normalize";
+@import "plugins/swiper";
 
 /* Общие */
 @import "functions";
@@ -11,3 +12,5 @@
 /* Блоки */
 @import "blocks/header";
 @import "blocks/container";
+@import "blocks/video-slider";
+@import "blocks/photo-slider";
