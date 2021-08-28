@@ -84,8 +84,8 @@
 
         <div class="article__content">
           <p class="article__text">Flashing Case comes in a convenient and attractive box with charging USB cord and simple operation instructions.</p>
-          <a href="#" class="article__link btn">
-            <img src="" alt="">
+          <a href="#" class="article__link button button_type_wide">
+            <img class="button__icon" src="img/sprite/bag-icon.svg" alt="bag icon">
             <span> Order package</span>
           </a>
         </div>
@@ -117,7 +117,7 @@
         <div class="contacts__container">
           <h2 class="contacts__title title">CONTACT US</h2>
           <p class="contacts__subtitle">Order your custom design</p>
-          <a clas="contacts__mail" href="mailto:agent@eaglelection.com">agent@eaglelection.com</a>
+          <a class="contacts__mail" href="mailto:agent@eaglelection.com">agent@eaglelection.com</a>
           <div class="contacts__social social">
             <p class="social__caption">Purchase from our popular collection :</p>
             <ul class="social__list">
@@ -150,24 +150,18 @@
           <h2 class="form__title title">FILL FORM</h2>
           <p class="form__subtitle">We offer special pricing for volume orders.</p>
           <form action="#" class="form__form">
-            <label for="">
-              <img src="" alt="">
-              <span></span>
+            <label class="form__label form__label_type_phone" for="phone">Phone number</label>
+            <input class="form__input" type="tel" name="phone" id="phone">
+            <label class="form__label form__label_type_mail" for="mail">E-mail</label>
+            <input class="form__input" type="email" name="mail" id="mail">
+            <label class="form__label form__label_type_message" for="message">Message</label>
+            <textarea class="form__textarea" name="message" id="message"></textarea>
+            <label class="form__checkbox-label">
+               <input class="visually-hidden" type="checkbox" name="agree" id="agree">
+               <span></span>
+               Request an appointment for demonstration of our product
             </label>
-            <input type="text">
-            <label for="">
-              <img src="" alt="">
-              <span></span>
-            </label>
-            <input type="text">
-            <label for="">
-              <img src="" alt="">
-              <span></span>
-            </label>
-            <textarea></textarea>
-            <input type="checkbox" name="" id="">
-            <label for=""></label>
-            <button>Send message</button>
+            <button class="form__submit button button_type_submit">Send message</button>
           </form>
         </div>
       </section>

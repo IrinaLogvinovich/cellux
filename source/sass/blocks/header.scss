@@ -6,3 +6,11 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.header__logo-link {
+  margin-left: 20px;
+
+  @media(max-width: 1440px){
+    margin-left: 0;
+  }
+}
