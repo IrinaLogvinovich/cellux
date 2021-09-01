@@ -8,22 +8,13 @@ if (videoSliders.length) {
       loop: true,
       freeMode: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.video-slider__button_type_next',
+        prevEl: '.video-slider__button_type_prev',
       },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        },
-      // breakpoints: {
-      //   1024: {
-      //     centeredSlides: false,
-      //     spaceBetween: 24
-      //   },
-      //   767: {
-      //     spaceBetween: 45
-      //   },
-      // }
+        }
     });
   };
 

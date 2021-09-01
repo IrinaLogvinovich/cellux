@@ -9,4 +9,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px 700px;
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
 }
