@@ -6,7 +6,6 @@ if (videoSliders.length) {
       slidesPerView: 1,
       centeredSlides: true,
       loop: true,
-      freeMode: true,
       navigation: {
         nextEl: '.video-slider__button_type_next',
         prevEl: '.video-slider__button_type_prev',
