@@ -1,0 +1,16 @@
+.photo-bg {
+  padding: 20px 0;
+}
+
+.photo-bg__container {
+  min-height: 700px;
+  background-color: #F6F6F6;
+  background-image: url("../img/large-bg@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px 700px;
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
+}

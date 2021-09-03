@@ -1,0 +1,131 @@
+.photo-slider {
+  padding: 20px 0;
+}
+
+.photo-slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+
+.photo-slider__bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  @media(max-width: 1024px) {
+    display: none;
+  }
+}
+
+.photo-slider__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+
+.photo-slider__bg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 710px;
+  width: 100%;
+  padding: 45px 55px;
+  background-color: #F6F6F6;
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-size: 84%;
+  background-position: center;
+  overflow: hidden;
+
+  @media(max-width: 1439px) {
+    height: calc((100vw / 2) - 10px);
+    padding: 7%;
+    background-size: 85%;
+  }
+}
+
+.photo-slider__img-wrapper {
+  position: relative;
+  width: 295px;
+  height: 536px;
+  margin-top: -79px;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 448px;
+    height: 584px;
+  }
+
+  @media(max-width: 1439px) {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 150%;
+      height: auto;
+    }
+  }
+}
+
+.photo-slider__img-wrapper:nth-of-type(2n) {
+  margin-top: 79px;
+}
+
+.photo-slider__list {
+  @include list-reset;
+  display: flex;
+}
+
+.photo-slider__slider {
+  display: none;
+
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+    background-image: url("../img/sprite/slide-prev.svg");
+  }
+
+  .swiper-button-next {
+    right: 0;
+    background-image: url("../img/sprite/slide-next.svg");
+  }
+
+  @media(max-width: 1024px) {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-image: url("../img/ellipse.svg");
+    background-repeat: no-repeat;
+    background-size: 340px;
+    background-position: center;
+  }
+}
+
+.photo-slider__slide {
+  position: relative;
+  width: 190px;
+  height: 375px;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 305px;
+    // height: 584px;
+  }
+}
